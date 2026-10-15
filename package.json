@@ -1,0 +1,50 @@
+{
+  "name": "bare-ui-kit-touch",
+  "version": "0.0.0",
+  "description": "Synthesized UIKit touches for testing Bare apps on iOS",
+  "exports": {
+    "./package": "./package.json",
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "binding.m",
+    "binding.js",
+    "CMakeLists.txt",
+    "prebuilds"
+  ],
+  "addon": true,
+  "scripts": {
+    "format": "prettier --write . && lunte --fix",
+    "lint": "prettier --check . && lunte",
+    "test": "bare-native-test --platform ios --runtime bare-ui-kit/runtime test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/bare-ui-kit-touch.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/bare-ui-kit-touch/issues"
+  },
+  "homepage": "https://github.com/holepunchto/bare-ui-kit-touch#readme",
+  "dependencies": {
+    "bare-foundation-registry": "^0.1.0"
+  },
+  "devDependencies": {
+    "bare-animation-frame": "^0.1.0",
+    "bare-native-test": "^0.1.3",
+    "bare-tap": "^1.1.0",
+    "bare-ui-kit": "^0.3.0",
+    "bare-ui-kit-touch": "file:.",
+    "cmake-bare": "^1.6.5",
+    "lunte": "^1.8.0",
+    "prettier": "^3.4.1",
+    "prettier-config-holepunch": "^2.0.0"
+  }
+}
