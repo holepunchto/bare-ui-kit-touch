@@ -1,6 +1,6 @@
 {
   "name": "bare-ui-kit-touch",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Synthesized UIKit touches for testing Bare apps on iOS",
   "exports": {
     "./package": "./package.json",
